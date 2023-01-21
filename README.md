@@ -15,7 +15,7 @@ Second, install the following three libraries for your python installation: pyto
 
 -Sentencepiece installation: Just do ``pip install sentencepiece``
 
-Third, download and unzip the release to your REAPER scripts folder. (To find your REAPER scripts folder, from within REAPER go to Options > Show REAPER resource path in explorer/finder..., and then open the folder called Scripts.) I highly recommend you unzip to a folder *within* your scripts folder instead of dumping everything directly into the scripts folder, but it's up to you.
+Third, download and unzip the release to your REAPER scripts folder. (To find your REAPER scripts folder, from within REAPER go to Options > Show REAPER resource path in explorer/finder..., and then open the folder called Scripts.) It is highly recommended that you unzip to a folder *within* your scripts folder instead of dumping everything directly into the scripts folder, but it's up to you.
 
 From here, you load the scripts into REAPER in the usual way: In REAPER, go to Actions > Show action list..., then click on New action > Load ReaScript..., and then select all six scripts that start with "CA_". Ignore the other files. They are just helper files that these six scripts need to run.
 
