@@ -9,11 +9,11 @@ First, if you don't already have python 3.6 or higher installed, install it and 
 
 Second, install the following three libraries for your python installation: pytorch, transformers, and sentencepiece.
 
-Pytorch installation: Go to https://pytorch.org/ to get the command you need to run. You'll want the stable build for your OS, using the "Pip" package for Python. If you have an NVIDIA card, it is recommended to install a CUDA version. Otherwise, install the CPU version. The CPU version will work. It's just slower. The command you use should start with something like "pip3 install torch..."
+-Pytorch installation: Go to https://pytorch.org/ to get the command you need to run. You'll want the stable build for your OS, using the "Pip" package for Python. If you have an NVIDIA card, it is recommended to install a CUDA version. Otherwise, install the CPU version. The CPU version will work. It's just slower. The command you use should start with something like "pip3 install torch..."
 
-Transformers installation: Just do ``pip install transformers``
+-Transformers installation: Just do ``pip install transformers``
 
-Sentencepiece installation: Just do ``pip install sentencepiece``
+-Sentencepiece installation: Just do ``pip install sentencepiece``
 
 Third, download and unzip the release to your REAPER scripts folder. (To find your REAPER scripts folder, from within REAPER go to Options > Show REAPER resource path in explorer/finder..., and then open the folder called Scripts.) I highly recommend you unzip to a folder *within* your scripts folder instead of dumping everything directly into the scripts folder, but it's up to you.
 
