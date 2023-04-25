@@ -31,7 +31,9 @@ YOUR_PATH_TO_REAPER\Scripts\composer assistant\CA_fill_empty_midi_items_in_time_
 
 at this point.
 
-***STEP 6***: Load the scripts into REAPER in the usual way: In REAPER, go to Actions > Show action list..., then click on New action > Load ReaScript..., and then open all scripts that start with "CA_". All other files are just helper files that these scripts need to run. Before you run any of the scripts, start the neural net server by running the composer_assistant_nn_server.py file (or, for Windows users who skipped step 4, the composer_assistant_nn_server\composer_assistant_nn_server.exe file).
+***STEP 6***: Load the scripts into REAPER in the usual way: In REAPER, go to Actions > Show action list..., then click on New action > Load ReaScript..., and then open all scripts that start with "CA_". All other files are just helper files that these scripts need to run. 
+
+Before you run any of the scripts, start the neural net server by running the composer_assistant_nn_server.py file (or, for Windows users who skipped step 4, the composer_assistant_nn_server\composer_assistant_nn_server.exe file).
 
 **NOTE**
 
