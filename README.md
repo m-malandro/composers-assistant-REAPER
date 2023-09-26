@@ -21,9 +21,9 @@ WINDOWS USERS: If all you want to do is use the model (e.g., you do not want to 
 
 ***STEP 5***: Unzip one of the following releases to your REAPER scripts folder. (To find your REAPER scripts folder, from within REAPER go to Options > Show REAPER resource path in explorer/finder..., and then open the folder called Scripts.)
 
-Users who did step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v1.1.2/composers.assistant.v1.1.2.zip
+Users who did step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v1.1.3/composers.assistant.v1.1.3.zip
 
-Windows users who skipped step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v1.1.2/composers.assistant.v1.1.2.windows_exe.zip
+Windows users who skipped step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v1.1.3/composers.assistant.v1.1.3.windows_exe.zip
 
 Your files are in the right place if you have files like
 
