@@ -41,4 +41,13 @@ The models in the release were trained only on public domain and permissively-li
 
 **HOW TO CITE COMPOSER'S ASSISTANT**
 
-Coming Soon.
+```
+@inproceedings{ComposersAssistant,
+title = {{Composer's Assistant: An Interactive Transformer for Multi-Track MIDI Infilling}},
+author = {Malandro, Martin},
+booktitle = {{Proc. 24th Int. Society for Music Information Retrieval Conf.}},
+year = 2023,
+address = {Milan, Italy},
+pages = {327--334},
+}
+```
