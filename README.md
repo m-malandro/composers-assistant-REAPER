@@ -3,6 +3,8 @@ Welcome to the repository for Composer's Assistant for REAPER.
 
 Please watch this video to learn how Composer's Assistant works: https://www.youtube.com/watch?v=S9KdNztChx0
 
+Please watch this video to learn about the new features introduced in version 2: https://youtu.be/NZmvbxR3LFM
+
 **INSTALLATION INSTRUCTIONS**
 
 ***STEP 1***: Install REAPER (64-bit): https://www.reaper.fm/
