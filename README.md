@@ -25,7 +25,7 @@ WINDOWS USERS: If all you want to do is use the model (e.g., you do not want to 
 
 Users who did step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v2.0.0/composers.assistant.v.2.0.0.zip
 
-Windows users who skipped step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v1.1.3/composers.assistant.v1.1.3.windows_exe.zip
+Windows users who skipped step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v2.0.0/composers.assistant.v.2.0.0.windows.exe.zip
 
 Your files are in the right place if you have files like
 
@@ -37,7 +37,7 @@ YOUR_PATH_TO_REAPER\Effects\composers_assistant_v2\CAv2 Global Options
 
 at this point.
 
-***STEP 6***: Restart REAPER. Load the scripts into REAPER in the usual way: In REAPER, go to Actions > Show action list..., then click on New action > Load ReaScript..., and then open all three scripts that start with "REAPER_". All other files are just helper files that these scripts need to run. Before you run any of the scripts, start the neural net server by running the composers_assistant_nn_server.py file in the scripts directory (or, for Windows users who skipped step 4, the composer_assistant_nn_server\composer_assistant_nn_server.exe file). The server window will need to remain open for the scripts to work. (Note: The server is just a separate process that runs on your computer. It does NOT send any information over the internet.)
+***STEP 6***: Restart REAPER. Load the scripts into REAPER in the usual way: In REAPER, go to Actions > Show action list..., then click on New action > Load ReaScript..., and then open all three scripts that start with "REAPER_". All other files are just helper files that these scripts need to run. Before you run any of the scripts, start the neural net server by running the composers_assistant_nn_server.py file in the scripts directory (or, for Windows users who skipped step 4, the composers_assistant_nn_server.exe file). The server window will need to remain open for the scripts to work. (Note: The server is just a separate process that runs on your computer. It does NOT send any information over the internet.)
 
 ***STEP 7***: Within REAPER, add the "JS: Global Options for Composer's Assistant v2" fx your Monitor FX chain (view > Monitoring Effects). This fx will need to stay in your Monitor FX to have any effect. Add the "JS: Track-Specific Generation Options for Composer's Assistant v2" fx to any track that you want to set the infilling controls for before running one of the three REAPER scripts. ENJOY!
 
