@@ -23,9 +23,9 @@ WINDOWS USERS: If all you want to do is use the model (e.g., you do not want to 
 
 ***STEP 5***: Unzip one of the following releases to your REAPER scripts folder. (To find your REAPER scripts folder, from within REAPER go to Options > Show REAPER resource path in explorer/finder..., and then open the folder called Scripts.)
 
-Users who did step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v2.0.0/composers.assistant.v.2.0.0.zip
+Users who did step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v2.1.0/composers.assistant.v.2.1.0.zip
 
-Windows users who skipped step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v2.0.0/composers.assistant.v.2.0.0.windows.exe.zip
+Windows users who skipped step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v2.1.0/composers.assistant.v.2.1.0.windows.exe.zip
 
 Your files are in the right place if you have files like
 
@@ -55,5 +55,13 @@ booktitle = {{Proc. 24th Int. Society for Music Information Retrieval Conf.}},
 year = 2023,
 address = {Milan, Italy},
 pages = {327--334},
+}
+
+@inproceedings{ComposersAssistant2,
+title = {{Composer's Assistant 2: Interactive Multi-Track MIDI Infilling with Fine-Grained User Control}},
+author = {Malandro, Martin},
+booktitle = {{Proc. 25th Int. Society for Music Information Retrieval Conf.}},
+year = 2024,
+address = {San Francisco, CA, USA},
 }
 ```
