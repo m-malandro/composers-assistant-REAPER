@@ -21,7 +21,7 @@ WINDOWS USERS: If all you want to do is use the model (e.g., you do not want to 
 
 -Transformers installation: From the command line, run pip install transformers
 
-***STEP 5***: Unzip one of the following releases to your REAPER scripts folder. (To find your REAPER scripts folder, from within REAPER go to Options > Show REAPER resource path in explorer/finder..., and then open the folder called Scripts.)
+***STEP 5***: Unzip one of the following releases to your REAPER resources folder. (To find your REAPER resources folder, from within REAPER go to Options > Show REAPER resource path in explorer/finder...)
 
 Users who did step 4: Use https://github.com/m-malandro/composers-assistant-REAPER/releases/download/v2.1.0/composers.assistant.v.2.1.0.zip
 
