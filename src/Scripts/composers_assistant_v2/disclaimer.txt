@@ -1,0 +1,5 @@
+We claim no rights to the outputs you generate with the models we've distributed. Model outputs are yours to do with as you wish, provided that they do not violate the copyright of any other person or entity.
+
+These models were trained on a set of MIDI files marked as being in the public domain, available under a CC0 license (or otherwise freely available to use without attribution), available under a CC-BY license, or which we had permission from the MIDI file authors to use for training. (See the acknowledgments.) 
+
+There is a chance (albeit, in our opinion, a very small one) that the models we've distributed may output copyrighted musical information, even if such information was not present in the training dataset for the models. You use the models at your own risk. If you release any model outputs, then you are personally responsible for ensuring that such model outputs do not contain any musical information whose copyright is held by another person or entity. See also the License.
