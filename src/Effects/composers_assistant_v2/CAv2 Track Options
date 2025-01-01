@@ -1,0 +1,128 @@
+desc:Track-Specific Generation Options for Composer's Assistant v2
+
+slider1:jsfx_id=349583024<349583024, 349583024, 1>-jsfx_id
+
+# Note: It says here that the range is -1 to 4, but querying it actually returns numbers from 0 to 5, because it is a dropdown menu rather than a slider.
+slider10:vert_density=-1<-1, 4, 1{-1 = No preference,0 = Mono,1 = 1.01-2 notes,2 = 2.01-3 notes,3 = 3.01-4 notes,4 = More than 4 notes}>Vertical note density (average)
+slider11:n_pitch_classes=-1<-1, 4, 1{-1 = No preference,0 = 1 pitch class,1 = 1.01-2 pitch classes,2 = 2.01-3 pitch classes,3 = 3.01-4 pitch classes,4 = More than 4 pitch classes}>Number of pitch classes per onset (average)
+
+slider20:horiz_density=4<-1, 5, 1{-1 = No preference,0 = Less than half notes,1 = Half notes to quarter notes,2 = Quarter notes to 8th notes,3 = 8th notes to 16th notes,4 = 16th notes to 4.5 onsets per QN,5 = 4.5+ onsets per QN}>Horizontal note onset density (average)
+# slider21:horiz_density_diversity_percentage=3<-1, 3, 1{-1 = No preference,0 = None,1 = 1-24.9% of measures different from most common,2 = 25-49.9% of measures different from most common,3 = 50%+ of measures different from most common}>Horizontal note onset density diversity
+slider21:rhy_ins=3<-1, 3, 1{-1 = No preference,0 = None/Low,1 = Medium,2 = High,}>Rhythmic interest
+# slider23:h_dens_var=2<-1, 3, 1{ -1 = No preference, 0 = Zero, 1 = Low, 2 = Medium, 3 = High}>horizontal note onset density stdev
+
+slider30:step_bin=4<-1,6,1{-1 = No preference,0 = 0%,1 = 1-20%,2 = 20-40%,3 = 40-60%,4 = 60-80%,5 = 80-99%,6 = 100%}>Step propensity
+slider31:leap_bin=3<-1,6,1{-1 = No preference,0 = 0%,1 = 1-20%,2 = 20-40%,3 = 40-60%,4 = 60-80%,5 = 80-99%,6 = 100%}>Leap propensity
+
+# slider7:stac=0<-1, 4, 1>staccato-ness
+slider40:low_note_strict=-1<-1,127,1>Lowest pitch (strict)
+slider41:high_note_strict=-1<-1,127,1>Highest pitch (strict)
+
+slider50:low_note_loose=-1<-1,127,1>Lowest pitch (loose)
+slider51:high_note_loose=-1<-1,127,1>Highest pitch (loose)
+
+slider60:low_vel=-1<-1, 127, 1>Lowest velocity for new notes
+slider61:high_vel=-1<-1, 127, 1>Highest velocity for new notes
+
+slider99:octave_shift_allowed=1<0, 1, 1{0 = No,1 = Yes}>New measures can be vertical copies of others
+
+# -1 for the slider version and 0 for the dropdown menu version
+slider100:rpr_script_min_val=0<0, 0, 1>-rpr_script_min_val
+
+in_pin:none
+out_pin:none
+
+@init
+hns_prev = high_note_strict;
+hnl_prev = high_note_loose;
+lns_prev = low_note_strict;
+lnl_prev = low_note_loose;
+step_prev = step_bin;
+leap_prev = leap_bin;
+vd_prev = vert_density;
+n_pc_prev = n_pitch_classes;
+
+@slider
+hns_prev != high_note_strict ?
+(
+  high_note_strict > -1?
+  (
+    high_note_loose = -1;
+  );
+);
+
+hnl_prev != high_note_loose ?
+(
+  high_note_loose > -1?
+  (
+    high_note_strict = -1;
+  );
+);
+
+lns_prev != low_note_strict?
+(
+  low_note_strict > -1?
+  (
+    low_note_loose = -1;
+  );
+);
+
+lnl_prev != low_note_loose?
+(
+  low_note_loose > -1?
+  (
+    low_note_strict = -1;
+  );
+);
+
+step_prev != step_bin?
+(
+  step_bin + leap_bin > 9?
+  (
+    leap_bin = 9 - step_bin;
+  );
+  step_bin == 7 && leap_bin != 0?
+  (
+    leap_bin = 1;
+  );
+);
+
+leap_prev != leap_bin?
+(
+  step_bin + leap_bin > 9?
+  (
+    step_bin = 9 - leap_bin;
+  );
+  leap_bin == 7 && step_bin != 0?
+  (
+    step_bin = 1;
+  );
+);
+
+/*
+vd_prev > vert_density?
+(
+  n_pitch_classes > rpr_script_min_val && vert_density > rpr_script_min_val && vert_density < n_pitch_classes?
+  (
+    n_pitch_classes = vert_density;  
+  );
+);
+
+n_pc_prev < n_pitch_classes?
+(
+  n_pitch_classes > rpr_script_min_val && vert_density > rpr_script_min_val && vert_density < n_pitch_classes?  
+  (
+    vert_density = n_pitch_classes;
+  );
+);
+*/
+
+hns_prev = high_note_strict;
+hnl_prev = high_note_loose;
+lns_prev = low_note_strict;
+lnl_prev = low_note_loose;
+step_prev = step_bin;
+leap_prev = leap_bin;
+n_pc_prev = n_pitch_classes;
+vd_prev = vert_density;
+

@@ -1,0 +1,15 @@
+Ensure that you have python 3.9+ as well as the following python packages installed:
+-numpy
+-pytorch
+-miditoolkit
+-portion
+-sentencepiece (only required if you want to finetune a joined-vocab model)
+-transformers
+
+After pretraining your model using the instructions in "instructions for pretraining.txt":
+
+1) Edit and run build_finetune_train_data.py. You will need to build the data for epoch n before you can finetune on epoch n. You can build the data for epoch 0, then finetune on epoch 0 while building the data for epoch 1, then finetune on epoch 1, etc. If you are starting with a model that has already been finetuned, its folder will tell you the last epoch that it was trained on - you should then start by building the data for the following epoch.
+
+2) Edit the top area in finetune_model.py, then run finetune_model.py.
+
+3) Continue alternating between build_finetune_train_data.py and finetune_model.py until done.

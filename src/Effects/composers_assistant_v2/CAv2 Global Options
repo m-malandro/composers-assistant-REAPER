@@ -1,0 +1,14 @@
+desc:Global Options for Composer's Assistant v2
+
+slider1:jsfx_id=54964317<54964317, 54964317, 1>-jsfx_id
+slider12:temperature=1.0<0.0, 5.0, 0.1>Temperature
+slider20:rhy_cond=0<0, 2, 1{Do Not Preserve Rhythm,Preserve Rhythm,Preserve Rhythm and number of Pitches and number of Pitch Classes}>Preserve Rhythm in Selected Items
+slider30:do_note_range_cond=0<0, 2, 1{Do Not Preserve Pitch Range,Yes (Loose),Yes (Strict)}>Preserve Pitch Range in Each Sel Tr Measure
+slider40:no_rep_n_gram_size=3<2, 10, 1>N-Gram Size for No Rep Script
+slider41:variation_alg=0<0, 2, 1{Random Rewriting,Measure-Based Rewriting,Track-Based Rewriting}>Algorithm for Variation Writing Script
+slider42:disp_tr_to_midi_inst=1<0, 1, 1{No,Yes}>Display Track-to-MIDI Instrument
+slider43:gen_notes_selected=1<0, 1, 1{No,Yes}>Generated Notes are Selected
+slider44:display_warnings=1<0, 1, 1{No,Yes}>Display Warnings
+
+in_pin:none
+out_pin:none
