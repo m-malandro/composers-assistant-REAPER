@@ -3,7 +3,9 @@ Welcome to the repository for Composer's Assistant for REAPER.
 
 Please watch this video to learn how Composer's Assistant works: https://www.youtube.com/watch?v=S9KdNztChx0
 
-Please watch this video to learn about the new features introduced in version 2: https://youtu.be/NZmvbxR3LFM
+Please watch this video to learn about the new features introduced in version 2: https://www.youtube.com/watch?v=NZmvbxR3LFM
+
+Please watch this video if you need help with the installation instructions below: https://www.youtube.com/watch?v=kbc1Awf0sM0
 
 **INSTALLATION INSTRUCTIONS**
 
