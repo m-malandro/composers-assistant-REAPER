@@ -65,5 +65,6 @@ author = {Malandro, Martin},
 booktitle = {{Proc. 25th Int. Society for Music Information Retrieval Conf.}},
 year = 2024,
 address = {San Francisco, CA, USA},
+pages = {438--445},
 }
 ```
