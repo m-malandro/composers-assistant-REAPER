@@ -52,7 +52,7 @@ The models in the release were trained only on public domain and permissively-li
 ```
 @inproceedings{ComposersAssistant,
 title = {{Composer's Assistant: An Interactive Transformer for Multi-Track MIDI Infilling}},
-author = {Malandro, Martin},
+author = {Martin E. Malandro},
 booktitle = {{Proc. 24th Int. Society for Music Information Retrieval Conf.}},
 year = 2023,
 address = {Milan, Italy},
@@ -61,7 +61,7 @@ pages = {327--334},
 
 @inproceedings{ComposersAssistant2,
 title = {{Composer's Assistant 2: Interactive Multi-Track MIDI Infilling with Fine-Grained User Control}},
-author = {Malandro, Martin},
+author = {Martin E. Malandro},
 booktitle = {{Proc. 25th Int. Society for Music Information Retrieval Conf.}},
 year = 2024,
 address = {San Francisco, CA, USA},
